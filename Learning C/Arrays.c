@@ -21,7 +21,7 @@ int main()
     return 0;
 
 }
-*/
+*//*
 //Two dimensional Arrays:
 
 #include<stdio.h>
@@ -53,6 +53,9 @@ int main()
     }
 
     for(i=0;i<n;i++)
+    {
+
+
 
         for(j=0;j<n;j++)
         {
@@ -63,5 +66,53 @@ int main()
 
     }
 
-return 0;
+    return 0;
+}
+*//*
+
+//string ******************
+
+#include<stdio.h>
+int main()
+{
+    char c[10];
+    printf("Enter the String: ");
+    gets(c);
+
+    printf("%s", c);
+
+
+
+    return 0;
+
+}
+*/
+
+//String fuctions:
+
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+    char c[20], a[20];
+    char x[]={'r', 'a', 'm', '\0'};
+    char y[]={'k', 'u', 'm', 'a', 'r', '\0'};
+    printf("x: %s", x);
+    printf("\n Enter the String: ");
+    gets(c);
+
+    printf("Length : %d", strlen(c)); //string length
+    printf("\n String Reverse : %s", strrev(c)); //String reverse
+    printf("\n String Reverse : %s", strrev(c)); //String reverse
+    printf("\n String Upper case : %s", strupr(c)); //String uppercase
+    printf("\n String Lower case : %s", strlwr(c)); //String lowercase
+    printf("\n String compare : %d", strcmp(x,c)); //String compare  || 0 is correct and -1 is wrong.
+    printf("\n String copy : %s", strcpy(a, c)); //String copy  (copy from , copy to)
+    printf("\n String a : %s",a); //String show in a
+    printf("\n String Concatenation : %s", strcat(x, y)); //Joint two strings
+
+
+    return 0;
+
 }
