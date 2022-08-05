@@ -89,7 +89,7 @@ int main()
 */
 
 //String fuctions:
-
+/*
 #include<stdio.h>
 #include<string.h>
 
@@ -115,4 +115,23 @@ int main()
 
     return 0;
 
+}
+*/
+// Math Function:
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+    printf("Square root of 4: %0.2f", sqrt(4));
+    printf("\n Power of 2^3: %0.2f", pow(2,3));
+    printf("\n abs of -5: %d", abs(-5));
+    printf("\n Ceil of 3.2: %0.2f", ceil(3.2)); //NEAREST NEXT LARGER NUMBER FOR 3.2 IS 4
+    printf("\n Ceil of 3.2: %0.2f", ceil(3.7)); // "
+    printf("\n FLOOR of 3.2: %0.2f", floor(3.2));// NEAREST BEFORE SMALLER NUMBER FOR 3.2 IS 3
+    printf("\n FLOOR of 3.2: %0.2f", floor(3.7));
+    printf("\n ROUND of 3.2: %0.2f", round(3.2));
+    printf("\n ROUND of 3.2: %0.2f", round(3.7));
+
+    return 0;
 }
