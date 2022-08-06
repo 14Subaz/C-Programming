@@ -21,6 +21,7 @@ int main()
 */
 //Double Pointer and triple pointer *************
 //sample program for double pointer
+/*
 #include<stdio.h>
 
 int main()
@@ -59,4 +60,22 @@ int main()
 
     return 0;
 
+}
+*/
+
+//Pointer Arithmetic in C Program
+
+#include<stdio.h>
+
+int main()
+{
+
+    int a=1;
+    int *p, *r;
+    p=&a;
+    r=p+1+;
+    printf("Size of A : %d", sizeof(a));
+    printf("\nValue of p: %d", p);
+    printf("\nValue of r: %d", r);
+    return 0;
 }
