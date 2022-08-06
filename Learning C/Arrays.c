@@ -259,7 +259,7 @@ int add(int x,int y)
 /*
     5!
     1*2*3*4*5
-*/
+*//*
 
 int factorial(int i) //5
 {
@@ -271,6 +271,106 @@ int factorial(int i) //5
 
 int main()
 {
-    printf("Factorial : %d",factorial(5));
+    int x;
+    printf("\n Enter the factorial: ");
+    scanf("%d", &x);
+    printf("Factorial : %d",factorial(x));
     return 0;
 }
+*//*
+// Call by reference
+
+#include<stdio.h>
+void swap(int *x, int *y)
+{
+   int temp;
+   temp=*x;
+   *x=*y;
+   *y=temp;
+}
+int main()
+{
+    int a, b;
+    printf("\n Enter the value of A & B: ");
+    scanf("%d%d", &a, &b);
+    printf("\n Before Swap A: %d and B: %d", a, b);
+    swap(&a, &b);
+    printf("\n After Swap A: %d and B: %d", a, b);
+    return 0;
+}
+*//*
+// Local Variable
+
+#include<stdio.h>
+
+int main()
+{
+    for(int/*Local Variable*//* i=0;i<5;i++)
+    {
+        printf("\n%d", i);
+    }
+}
+*//*
+
+//Global Variable
+
+#include<stdio.h>
+//function declaration
+void display();
+
+int a=10;
+
+int main()
+{
+    printf("\n Value of A: %d", a);
+    //function calling
+    display();
+    return 0;
+
+}
+//function definition
+void display()
+{
+    a++;
+    printf("\n Value of A: %d", a);
+
+}
+*/
+/*
+//Static Variable:
+
+#include<stdio.h>
+
+void display();
+
+int main()
+{
+    display();
+    display();
+    display();
+
+}
+void display()
+{
+    static int x=1;
+    x++;
+    printf("\nx: %d", x);
+
+
+}
+*/
+
+// Enumeration or enum in c
+
+#include<stdio.h>
+enum Bool{no=000, yes=111};
+int main()
+{
+    enum Bool a;
+    a=no;
+    printf("%d", a);
+
+    return 0;
+}
+
+
