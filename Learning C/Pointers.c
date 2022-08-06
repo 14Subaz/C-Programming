@@ -79,7 +79,7 @@ int main()
     printf("\nValue of r: %d", r);
     return 0;
 }
-*/
+*//*
 //Pointer Handle Array Values in C
 #include<stdio.h>
 int main()
@@ -104,5 +104,18 @@ int main()
     printf("\nValue  of *++P        : %d",*++p);//30
     printf("\nValue  of ++*P        : %d",++*p);//31
 
+    return 0;
+}
+*/
+
+//Generic Poniter or Void Pointers******
+
+#include<stdio.h>
+int main()
+{
+    int a[]={10,20,30,40,50};
+    void *p;
+    p=&a;
+    printf("\n Dereferencing of P: %d", *(int *)p);
     return 0;
 }
