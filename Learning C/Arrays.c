@@ -116,7 +116,7 @@ int main()
     return 0;
 
 }
-*/
+*/ /*
 // Math Function:
 #include<stdio.h>
 #include<math.h>
@@ -134,4 +134,122 @@ int main()
     printf("\n ROUND of 3.2: %0.2f", round(3.7));
 
     return 0;
+}
+*//*
+
+//Functions in C Programming:
+
+#include<stdio.h>
+
+void add()
+{
+    int a, b, c;
+    printf("\n Enter the value of A: ");
+    scanf("%d", &a);
+    printf("\n Enter the value of B: ");
+    scanf("%d", &b);
+    c=a+b;
+    printf("\n The value of C: %d", c);
+}
+int main()
+{
+    int n, i;
+   printf("\n Enter the limit: ");
+   scanf("%d", &n);
+
+   for(i=0; i<=n; i++)
+   {
+       add();
+
+   }
+
+    return 0;
+}
+
+
+//Types of function
+
+Inbuild function
+User defined function
+   1. call by value
+           1. Return Type (Data-type)
+            2. Not Return (Void)
+   2. call by reference
+ */
+
+// No Return without Argument function in C   (void means no return)********************
+/*
+Rules for create function
+    1. Function Declaration
+    2. Function calling
+    3. Function Definition
+*//*
+#include<stdio.h>
+
+//function declaration
+void add()
+{   //function definition
+    int a, b, c;
+    printf("\n Enter the value of A: ");
+    scanf("%d", &a);
+    printf("\n Enter the value of B: ");
+    scanf("%d", &b);
+    c=a+b;
+    printf("\n The value of C: %d", c);
+}
+int main()
+{
+    int n, i;
+   printf("\n Enter the limit: ");
+   scanf("%d", &n);
+
+   for(i=0; i<=n; i++)
+   {    //Function calling
+       add();
+
+   }
+
+    return 0;
+}
+*//* Return type function without Argument *************************
+#include<stdio.h>
+
+//function declaration
+int add();
+
+int main()
+{
+    int a;
+    // Function calling
+    a=add();
+    printf("\n Total : %d", a);
+
+    return 0;
+}
+int add()
+{
+    int a, b;
+    printf("\n Enter the value of A & B: ");
+    scanf("%d%d", &a, &b);
+
+    return a+b;
+}
+*/
+
+//Return With Argument Function in C
+#include<stdio.h>
+int add(int,int);
+int main()
+{
+    int a,b;
+    printf("\nEnter The Value of A & B : ");
+    scanf("%d%d",&a,&b);
+    a=add(a,b);
+    printf("\nTotal : %d",a);
+    return 0;
+}
+
+int add(int x,int y)
+{
+    return x+y;
 }
