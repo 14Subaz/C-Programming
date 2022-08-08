@@ -31,7 +31,7 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="Arrays.c">
+		<Unit filename="Pointers.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions>

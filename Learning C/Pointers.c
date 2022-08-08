@@ -107,8 +107,8 @@ int main()
     return 0;
 }
 */
-
-//Generic Poniter or Void Pointers******
+/*
+//Generic Pointer or Void Pointers******
 
 #include<stdio.h>
 int main()
@@ -117,5 +117,35 @@ int main()
     void *p;
     p=&a;
     printf("\n Dereferencing of P: %d", *(int *)p);
+    return 0;
+}
+*/
+//malloc in Pointers
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    //void* malloc(size_t size)
+    int i,n;
+    printf("\nEnter The Limit : ");
+    scanf("%d",&n);
+
+    int *ptr=(int *)malloc(n*sizeof(int));
+
+    if(ptr==NULL)
+    {
+          printf("Memory Not Available ...");
+          exit(1);
+    }
+    /*for(i=0; i<n; i++)
+    {
+        printf("Enter a integer : ");
+        scanf("%d",ptr+i);
+    }*/
+    for(i=0;i<n;i++)
+    {
+        printf("%d  ",*(ptr+i));  // ptr+1
+    }
+
     return 0;
 }
